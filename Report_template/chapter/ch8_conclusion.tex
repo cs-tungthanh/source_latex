@@ -1,0 +1,22 @@
+\chapter{TỔNG KẾT}\label{chap:conclusion}
+\section{Thành quả đạt được}
+Hoàn thành giai đoạn Luận văn tốt nghiệp, ngoài việc được trang bị thêm các kiến thức trong lĩnh vực xử lý ảnh cũng như các phương pháp nghiên cứu, đánh giá một đề tài khoa học, với nỗ lực của các thành viên trong nhóm, đề tài đã đạt được những kết quả sau đây:
+\vspace{-0.4cm}
+\begin{itemize}
+    \item Tìm hiểu, hiện thực và đánh giá thành công các công trình tiêu biểu trong lĩnh vực phân đoạn ảnh y khoa hiện nay.
+    \item Hiểu được tầm quan trọng của quá trình chuẩn bị dữ liệu, việc dữ liệu được chuẩn bị không hợp lý sẽ ảnh hướng lớn đến kết quả đầu ra.
+    \item Hiểu được quy trình thiết đặt các thí nghiệm một cách hợp lý trong quá trình nghiên cứu, các phương pháp nhận xét đánh giá kết quả một cách thích hợp.
+    \item Kế thừa ý tưởng từ các công trình liên quan và tích hợp thành công mô hình đề xuất U2net3D* cho bài toán phân đoạn mạch máu và phân đoạn gan, nhờ đó đã đạt được kết quả khả quan.
+    \item Mô hình phân đoạn mạch máu đã đạt được sử cải thiện đáng kể so với các công trình liên quan trước đó. Hệ số tương đồng (Dice score) tăng từ 56.29\% lên đến \textbf{60.75\%}.
+    \item Mô hình đề xuất cũng được áp dụng cho bài toán phân đoạn gan với độ chính xác xấp xỉ các công trình mới hiện nay. Mặc dù tỷ lệ sai khoảng 5\% nhưng với kết quả này việc ứng dụng sử dụng nhãn gan rất có khả thi. Tạo tiền đề để xây dựng các công cụ hỗ trợ đắc lực cho việc hỗ trợ bác sĩ chuẩn đoán ảnh CT.
+    \item Kế thừa và thêm mới nhiều tính năng cho hệ thống làm nhãn ảnh y khoa. Tích hợp mô hình phân đoạn gan vào hệ thống này để rút ngắn thời gian làm nhãn.
+\end{itemize}
+
+\section{Định hướng phát triển}
+Để mô hình phân đoạn mạch máu đạt được kết quả tốt nhất thì cần có mô hình phân đoạn gan đủ tốt để thực hiện bước tiền xử lý: Trích xuất thành phần gan. Hiện tại 2 mô hình này vẫn hoạt động riêng lẽ với nhau. Do đó, việc phát triển một hệ thống end to end cho phép dự đoán nhiều nhãn cùng lúc là một phương pháp khả thi.
+
+Mặc dù các mô hình phân đoạn đã đạt được kết quả khả quan nhưng bản chất số lượng tham số mô hình 3D này vẫn còn rất lớn, do đó sẽ còn gặp nhiều khó khăn trong quá trình tích hợp vào thiết bị ngoại vi. 
+
+Xây dựng mô hình phân đoạn nhiều cơ quan nội tạng khác nhau. Xác định các bất thường trong gan từ đó giúp tăng khả năng hỗ trợ các bác sĩ.
+
+Xây dựng hệ thống trực quan hóa kết quả phân đoạn ở dạng 3D.
